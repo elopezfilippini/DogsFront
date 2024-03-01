@@ -1,0 +1,24 @@
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%; /* Ajusta según tus necesidades */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.contenedorImagen {
+max-width: 50%;
+max-width: 50%}
+
+.imagenmia {
+  width: 100%; /* Ajusta el ancho de la imagen */
+  max-height: 100%;
+  border-radius: 70%;
+  border-color: aqua;
+}
+
+.contenedortexto {
+  background-color: rgb(211, 119, 0, 0.37);
+  border-radius: 50%;
+}
