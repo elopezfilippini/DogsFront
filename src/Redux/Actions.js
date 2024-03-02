@@ -4,7 +4,7 @@ import {ADD,REMOVE,SEARCH,TEMPS,ORDER,ORDERW,FILTER,FILTERORIGIN} from "./Action
 
 export const AddDog = function (name){
     return (dispatch)=>{
-    axios.get(`http://localhost:3001/getDogs/?name=${name}`)
+    axios.get(`https://dogsback-73qj.onrender.com/getDogs/?name=${name}`)
   .then(({data}) =>{ console.log(data)
     return dispatch ({
     type: SEARCH,
@@ -18,7 +18,7 @@ export const AddDog = function (name){
 
 export const AddAllDogs = function (){
   return (dispatch)=>{
-  axios.get(`http://localhost:3001/getAllDogs/`)
+  axios.get(`https://dogsback-73qj.onrender.com/getAllDogs/`)
 .then(({data}) =>{ console.log(data)
   return  dispatch({
   type: ADD,
@@ -33,7 +33,7 @@ export const AddAllDogs = function (){
 
 export const getTemps = function (){
   return (dispatch)=>{
-  axios.get(`http://localhost:3001/getTemps/`)
+  axios.get(`https://dogsback-73qj.onrender.com/getTemps/`)
 .then(({data}) =>{ console.log(data)
   return  dispatch({
   type: TEMPS,
@@ -79,7 +79,7 @@ export function OrderDogW(order) {
 export const NewDog = function (postDog){
   
 console.log(postDog)
-  axios.get(`http://localhost:3001/postDog`,postDog)
+  axios.get(`https://dogsback-73qj.onrender.com/postDog`,postDog)
 .then(({data}) =>{ console.log(data)
   // return dispatch ({
   // type: SEARCH,
