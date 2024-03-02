@@ -33,7 +33,7 @@ useEffect(() => {
 }, [personaje]);
 
 const del  = () => {
-  axios.get(`http://localhost:3001/deleteDog/${personaje.id}`)
+  axios.get(`https://dogsback-73qj.onrender.com/deleteDog/${personaje.id}`)
 .then(({data}) =>{ window.alert("personaje borrado " + data)
 navigate("/")});}
 

@@ -43,7 +43,7 @@ function postNewDog(newdog){
     temperament:newdog.temperament}
 console.log("EL PERRO QUE ENTREGA APP ES...")
     console.log(postDog)
-    axios.post(`http://localhost:3001/postDog`, postDog,{ withCredentials: true })
+    axios.post(`https://dogsback-73qj.onrender.com`, postDog,{ withCredentials: true })
     .then(({data}) =>{ console.log(data)
    
 })}
